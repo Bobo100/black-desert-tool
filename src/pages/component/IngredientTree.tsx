@@ -27,7 +27,7 @@ const TreeNode = ({ label, children, imageCache }: TreeNodeProps) => {
                 {/* {children && <span>{isOpen ? '🔽' : '▶️'}</span>} */}
                 {/* {!children && <span>🔹</span>} */}
                 <span>{label}</span>
-                {imageCache && imageCache[name] && (<img src={process.env.PUBLIC_URL + imageCache[name]} alt={label} />)}
+                {imageCache && imageCache[name] && (<img src={import.meta.env.BASE_URL + imageCache[name].slice(1)} alt={label} />)}
 
             </div>
             {isOpen && children && (
