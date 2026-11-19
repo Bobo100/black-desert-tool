@@ -14,7 +14,7 @@ function ImageComponent() {
         const cache: ImageCache = {};
         const paths = imagePaths as ImageCache;
         for (const imagePath of Object.keys(paths)) {
-            cache[imagePath] = `${process.env.PUBLIC_URL}${paths[imagePath]}`;
+            cache[imagePath] = `${import.meta.env.BASE_URL}${paths[imagePath].slice(1)}`;
         }
         setImageCache(cache);
     }, []);
