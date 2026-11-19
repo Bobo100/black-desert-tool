@@ -1,0 +1,1 @@
+.table_view{width:80%;height:30vh;margin:0 auto;overflow-y:scroll}table{border-collapse:separate;border-spacing:0;table-layout:fixed;text-align:center;width:100%}thead{z-index:2;background-color:#000;position:sticky;top:0}tbody td:first-child{z-index:1;background-color:#000;position:sticky;left:0}th,td{border:1px solid #fff}
